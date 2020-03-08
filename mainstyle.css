@@ -1,0 +1,137 @@
+/* Main Stylesheet for index.html */
+
+@font-face {
+    src: url(/media/Doubleplus.otf);
+    font-family: Doubleplus;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    margin: 0;
+}
+
+#backgroundvideo {
+    background-size: contain;
+    background-position: center center;
+    background-color: black;
+    position: fixed;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.middle-container {
+
+    position: absolute;
+
+    color: white;
+
+    text-align: center;
+
+    background-color: rgba(81, 0, 255, 0.5);
+    box-shadow: 0px 0px 50px rgb(81, 0, 255);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+}
+
+.middle-container span {
+
+    font-family: Doubleplus;
+
+    color:black;
+
+    text-transform: uppercase;
+    display: block;
+
+}
+
+.Title1 {
+    font-size: 5rem;
+    font-weight: 700;
+
+    letter-spacing: 10px;
+    
+    position: relative;
+
+    
+    animation: text 2s 1;
+}
+
+.Title2 {
+    font-size: 2rem;
+
+    letter-spacing: 2px;
+
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+
+@keyframes text {
+    0% {
+        color: rgba(0, 0, 0, 0);
+        margin-bottom: -100px;
+    }   
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+
+    list-style-type: none;
+
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+}
+
+ li a {
+
+    font-family: Doubleplus;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+
+    letter-spacing: 5px;
+
+    color: black;
+
+    padding: 14px 11px;
+}
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+
+.catcontainer {
+    
+    position: absolute;
+    bottom: 10;
+}
+
+img {
+    pointer-events: none;
+}
+
+.catcontainer img {
+
+    height: 2rem;
+
+}
